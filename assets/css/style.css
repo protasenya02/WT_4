@@ -1,0 +1,163 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+    color: #4e525d;
+    cursor: default;
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+nav, footer, header, aside {
+    display: block;
+}
+
+input, button, textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* header */
+.header {
+    z-index: 9999;
+    position: sticky;
+    top:0;
+    background-color: #fff;
+    box-shadow:  0 0 10px rgba(0,0,0, 0.2);
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 100px;
+    align-items: center;
+}
+
+.header_logo {
+    font-size: 40px;
+    line-height: 24px;
+    padding: 10px;
+    color: #49cbcd;
+    font-family: 'Caveat', cursive;
+}
+
+.header_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    list-style: none;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+/* nav */
+.nav_link {
+    color: #60646c;
+    padding: 37px 20px;
+    text-decoration: none;
+}
+
+.nav_link:hover {
+    background-color: #f8f9fb;
+    color: #49cbcd;
+    border-bottom: 3px solid #49cbcd;
+}
+
+.active .nav_link {
+    background-color: #f8f9fb;
+    color: #49cbcd;
+    border-bottom: 3px solid #49cbcd;
+}
+
+/* section */
+.section_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 100px auto 0;
+}
+
+.section_title {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+    /*color: #9440D5;*/
+    font-weight: 600;
+}
+
+.text_field {
+    width: 600px;
+    border-radius: 15px;
+    font-size: 18px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f4e3ff;
+    /*border: 2px solid #9440D5;*/
+}
+
+/* button */
+.btn {
+    font-size: 20px;
+    font-weight: 600;
+    background: #f4e3ff;
+    color: #9440D5;
+    max-width: 225px;
+
+    padding: 10px 40px;
+    margin: 20px auto 50px;
+    border: 2px solid #9440D5;;
+    border-radius: 10px;
+    transition: all .3s linear;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #9440D5;
+}
